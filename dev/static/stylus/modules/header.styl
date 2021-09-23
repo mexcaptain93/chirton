@@ -1,0 +1,81 @@
+.header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  position: relative
+  background-color: $baseBlue
+  min-height: 40px
+  padding: 0 16px 0 110px
+
+  &__logo
+    height: 97px
+    width: 107px
+    position: absolute
+    top: -22px
+    left: 15px
+
+    a
+      display: block
+      height: 100%
+      background-repeat: no-repeat
+      background-size: contain
+      background-image: url('../img/svg/logo.svg')
+
+
+  .search
+
+    &__input
+      position: relative
+      width: 157px
+
+      input
+        width: 100%
+        border-radius: 40px
+        border: 1px solid $blue
+        padding: 4px 15px 4px 25px
+
+        font-size: 12px
+        line-height: 14px
+
+        &::placeholder
+          color: $blue
+
+      &::before
+        content: ''
+        display: block
+        width: 14px
+        height: 14px
+        background-image: url('../img/svg/search.svg')
+        background-repeat: no-repeat
+        background-size: cover
+        position: absolute
+        top: 6px
+        left: 9px
+
+    &__submit
+      display: none
+
+
+  .burger
+
+    label
+      display: block
+      width: 25px
+      height: 16px
+      background-repeat: no-repeat
+      background-size: contain
+      background-image: url('../img/svg/menu.svg')
+
+    input
+      display: none
+
+      &:checked + label
+        width: 19px
+        height: 19px
+        background-image: url('../img/svg/close.svg')
+
+
+
+
+
+
