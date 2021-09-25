@@ -13,25 +13,24 @@
 
 
   &__logo
-    height: 97px
-    width: 107px
     position: absolute
-    top: -22px
-    left: 15px
+    height: 107px
+    width: 97px
+    top: -27px
+    left: 10px
 
     @media $tablet
-      height: 134px
-      width: 120px
-      top: -25px
-      left: 65px
+      height: 144px
+      width: 135px
+      top: -32px
+      left: 57px
 
     a
       display: block
       height: 100%
       background-repeat: no-repeat
       background-size: contain
-      background-image: url('../img/svg/logo.svg')
-
+      background-image: url('../img/svg/logo-shadow.svg')
 
   .search
 
@@ -85,6 +84,9 @@
 
   .burger
 
+    @media $desktop
+      display: none
+
     label
       display: block
       width: 25px
@@ -109,6 +111,62 @@
         @media $tablet
           width: 29px
           height: 29px
+
+  .lang-switcher
+    display: none
+
+    @media $tablet
+      display: block
+
+    @media $desktop
+      display: none
+
+    &__list
+      display: flex
+
+    &__item
+      font-size: 16px
+      color: $white
+      text-transform: uppercase
+
+      label
+        position: relative
+        cursor: pointer
+        margin-right: 8px
+
+        &::after
+          content: '/'
+          position: absolute
+          right: -7px
+          padding: 0 1px
+          font-weight: 400
+
+      input
+        display: none
+
+        &:checked + label
+          position: relative
+          font-weight: 700
+
+          &::before
+            content: ''
+            display: block
+            position: absolute
+            bottom: -2px
+            left: 0
+            right: 0
+            height: 1px
+            background-color: $white
+
+      &:last-child
+
+        label
+
+          &::after
+            content: ''
+
+
+
 
 
 

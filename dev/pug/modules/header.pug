@@ -1,13 +1,20 @@
 header.header
-    .header__logo
+    .header__logo.header__logo_shadow
         a(href='#')
     .header__search.search
         form.search__form
             .search__input
-                input(type='text' placeholder='Название или артикул товара')
-                // TODO: разные плейсхолдеры для мобильного и нет
+                input(type='text' placeholder='Поиск' class='js-header-serach-input')
             .search__submit
                 input(type='submit')
+    .header__lang-switcher.lang-switcher
+        ul.lang-switcher__list
+            li.lang-switcher__item
+                input(id='lang-ru' name='lang' type='radio' value='ru' checked)
+                label(for='lang-ru') Ru
+            li.lang-switcher__item
+                input(id='lang-en' name='lang' type='radio' value='en')
+                label(for='lang-en') En
     .header__mobmenu-toggler.burger
         input(type='checkbox' id='mobmenu-toggler')
         label(for='mobmenu-toggler')
