@@ -1,23 +1,55 @@
 header.header
-    .header__logo.header__logo_shadow
-        a(href='#')
-    .header__search.search
-        form.search__form
-            .search__input
-                input(type='text' placeholder='Поиск' class='js-header-serach-input')
-            .search__submit
-                input(type='submit')
-    .header__lang-switcher.lang-switcher
-        ul.lang-switcher__list
-            li.lang-switcher__item
-                input(id='lang-ru' name='lang' type='radio' value='ru' checked)
-                label(for='lang-ru') Ru
-            li.lang-switcher__item
-                input(id='lang-en' name='lang' type='radio' value='en')
-                label(for='lang-en') En
-    .header__mobmenu-toggler.burger
-        input(type='checkbox' id='mobmenu-toggler')
-        label(for='mobmenu-toggler')
+    .header__top
+        .header__container
+            .header__logo.header__logo_shadow
+                a(href='#')
+            .header__search.search
+                form.search__form
+                    .search__input
+                        input(type='text' placeholder='Поиск' class='js-header-serach-input')
+                    .search__submit
+                        input(type='submit')
+            .header__lang-switcher-top.lang-switcher
+                ul.lang-switcher__list
+                    li.lang-switcher__item
+                        input(id='lang-top-ru' name='lang' type='radio' value='ru' checked)
+                        label(for='lang-top-ru') Ru
+                    li.lang-switcher__item
+                        input(id='lang-top-en' name='lang' type='radio' value='en')
+                        label(for='lang-top-en') En
+            .header__contacts
+                .header__email
+                    a(href='mailto:test@test.ru') office@transatlantic.ru
+                .header__phone
+                    a(href='tel:+78005553535') +7(495) 775-39-38
+            .header__mobmenu-toggler.burger
+                input(type='checkbox' id='mobmenu-toggler')
+                label(for='mobmenu-toggler')
+    .header__bottom
+        .header__container
+            .header__menu.header-menu
+                ul.header-menu__list
+                    li.header-menu__item
+                        a(href='#') О компании
+                    li.header-menu__item
+                        a(href='#') Продукция
+                    li.header-menu__item
+                        a(href='#') Бренды
+                    li.header-menu__item
+                        a(href='#') Где купить
+                    li.header-menu__item
+                        a(href='#') Что нового
+                    li.header-menu__item
+                        a(href='#') Контакты
+            .header__lang-switcher-bottom.lang-switcher
+                ul.lang-switcher__list
+                    li.lang-switcher__item
+                        input(id='lang-btm-ru' name='lang' type='radio' value='ru' checked)
+                        label(for='lang-btm-ru') Ru
+                    li.lang-switcher__item
+                        input(id='lang-btm-en' name='lang' type='radio' value='en')
+                        label(for='lang-btm-en') En
+
 
 
 
