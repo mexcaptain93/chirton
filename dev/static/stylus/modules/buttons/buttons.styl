@@ -1,0 +1,34 @@
+.btn
+  position: relative
+  display: inline-block
+  padding: 6px 35px 7px 19px
+  border: 1px solid #00206E
+  border-radius: 50px
+  
+  font-size: 12px
+  font-weight: bold
+  text-transform: uppercase
+  color: #00206E
+
+  &::before
+    content: ''
+    display: block
+    width: 6px
+    height: 10px
+    position: absolute
+    top: 0
+    right: 0
+    background-repeat: no-repeat
+    background-size: contain
+    background-image: url('../img/svg/btn-arrow.svg')
+
+  &_white
+    border: 1px solid #fff
+
+    color: #ffffff
+
+    &::before
+      background-image: url('../img/svg/btn-arrow-white.svg')
+
+
+

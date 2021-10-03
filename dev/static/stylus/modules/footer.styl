@@ -26,6 +26,7 @@
   .footer-menu
     display: flex
     flex-direction: column
+    margin-bottom: 16px
 
     font-weight: 700
     font-size: 16px
@@ -38,3 +39,120 @@
       &:last-child
         margin-bottom: 0
 
+  .socials
+
+    &_tablet
+      display: none
+
+    &__list
+      display: flex
+      justify-content: center
+
+    &__item
+      width: 24px
+      height: 24px
+      margin-right: 20px
+      background-repeat: no-repeat
+      background-size: contain
+
+      &:last-child
+        margin-right: 0
+
+      &_whatsapp
+        background-image: url('../img/svg/whatsapp.svg')
+
+      &_instagram
+        background-image: url('../img/svg/instagram.svg')
+
+      &_youtube
+        background-image: url('../img/svg/youtube.svg')
+
+      a
+        display: block
+        height: 100%
+        width: 100%
+
+  .contacts
+
+    &__heading
+      margin-bottom: 16px
+
+      font-weight: 700
+      font-size: 16px
+      line-height: 19px
+      text-transform: uppercase
+
+    &__phone
+      margin-bottom: 16px
+
+      a
+        position: relative
+        padding-left: 22px
+
+        &::before
+          content: ''
+          position: absolute
+          top: 2px
+          left: 1px
+          display: block
+          width: 18px
+          height: 14px
+          background-repeat: no-repeat
+          background-size: contain
+          background-image: url('../img/svg/phone.svg')
+
+    &__email
+      margin-bottom: 16px
+
+      a
+        position: relative
+        padding-left: 22px
+
+        &::before
+          content: ''
+          position: absolute
+          top: 4px
+          left: 0
+          display: block
+          width: 14px
+          height: 13px
+          background-repeat: no-repeat
+          background-size: contain
+          background-image: url('../img/svg/email.svg')
+
+    &__address
+      position: relative
+      max-width: 204px
+      margin: 0 auto 16px
+
+      a
+        position: relative
+        display: block
+        padding-left: 33px
+
+        text-align: left
+        letter-spacing: 0.2px
+
+      &::before
+        content: ''
+        position: absolute
+        top: 3px
+        left: 13px
+        display: block
+        width: 13px
+        height: 13px
+        background-repeat: no-repeat
+        background-size: contain
+        background-image: url('../img/svg/pin.svg')
+
+    &__feedback-btn
+      margin-bottom: 16px
+
+      .btn
+        padding: 6px 15px 7px 16px
+
+        font-size: 16px
+        font-weight: 400
+
+        &::before
+          content: none
