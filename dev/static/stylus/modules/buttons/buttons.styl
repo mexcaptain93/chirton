@@ -1,16 +1,24 @@
 .btn
   position: relative
   display: inline-block
-  padding: 6px 35px 7px 19px
+  padding: 5px 28px 5px 12px
   border: 1px solid #00206E
   border-radius: 50px
   
-  font-size: 12px
+  font-size: 8px
   font-weight: bold
   text-transform: uppercase
   color: #00206E
   letter-spacing: -0.2px
   white-space: nowrap
+
+  @media $tablet
+    font-size: 10px
+
+  @media $desktop
+    padding: 5px 35px 5px 19px
+
+    font-size: 12px
 
   &::before
     content: ''
@@ -18,11 +26,14 @@
     width: 6px
     height: 10px
     position: absolute
-    top: 0
-    right: 0
+    top: 5px
+    right: 10px
     background-repeat: no-repeat
     background-size: contain
     background-image: url('../img/svg/btn-arrow.svg')
+
+    @media $tablet
+      top: 6px
 
   &_white
     border: 1px solid #fff

@@ -1,0 +1,150 @@
+.top-slider
+
+  .slide
+    position: relative
+    height: 208px
+
+    @media $tablet
+      height: 314px
+
+    @media $desktop
+      height: 660px
+
+    &__bg
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      width: 100%
+      height: 100%
+
+      &::after
+        content: ''
+        background: alpha(#000, 0.4)
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        width: 100%
+        height: 100%
+
+        @media $desktop
+          content: none
+
+      img
+        position: absolute
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+    &__content
+      position: relative
+      z-index: 2
+      height: 100%
+
+    &__container
+      display: flex
+      align-items: center
+      height: 100%
+      padding: 0 16px
+
+      @media $tablet
+        padding: 0 30px
+        justify-content: space-between
+
+      @media $desktop
+        position: relative
+
+    &__left
+
+      @media $tablet
+        padding-top: 28px
+
+      @media $desktop
+        flex-shrink: 0
+        width: 790px
+        padding: 28px 175px 25px 41px
+        background-color: alpha(#000, 0.3)
+        border-radius: 20px
+
+    &__img
+
+      @media $desktop
+        position: absolute
+        max-width: 540px
+        right: 20px
+        top: calc(50% - -25px)
+        transform: translateY(-50%)
+
+    &__heading
+      text-transform: uppercase
+      font-size: 16px
+      font-weight: 700
+      color: #ffffff
+      letter-spacing: -0.2px
+
+      @media $tablet
+        margin-bottom: 5px
+
+        font-size: 26px
+
+      @media $desktop
+        margin-bottom: 0
+
+        font-size: 36px
+        letter-spacing: 0
+
+      br
+
+        @media $desktop
+          display: none
+
+    &__subheading
+      display: inline-block
+      background-color: #148F2F
+      border-radius: 90px
+      margin-left: -4px
+      margin-bottom: 7px
+      padding: 2px 6px
+
+      font-size: 9px
+      font-weight: 400
+      color: #ffffff
+      text-transform: uppercase
+
+      @media $tablet
+        margin-left: 0
+
+        font-size: 12px
+
+
+      @media $desktop
+        margin-bottom: 12px
+        margin-right: 2px
+
+
+    &__text
+      margin-bottom: 8px
+      padding-right: 6px
+
+      font-size: 10px
+      line-height: 1.2
+      color: #ffffff
+
+      @media $tablet
+        max-width: 369px
+        margin-bottom: 16px
+
+        font-size: 14px
+
+      @media $desktop
+        min-width: 470px
+        margin-bottom: 13px
+
+        font-size: 16px
+
+
+
+
