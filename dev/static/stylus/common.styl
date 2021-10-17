@@ -1,5 +1,13 @@
 .top-slider
 
+  margin-bottom: 26px
+
+  @media $tablet
+    margin-bottom: 36px
+
+  @media $desktop
+    margin-bottom: 40px
+
   .slide
     position: relative
     height: 208px
@@ -148,3 +156,50 @@
 
 
 
+.heading
+  margin-bottom: 14px
+
+  @media $tablet
+    margin-bottom: 20px
+
+  @media $desktop
+    margin-bottom: 30px
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+
+  &__right
+    display: none
+
+    @media $desktop
+      display: block
+
+  .like-h2
+    margin-bottom: 2px
+
+    @media $tablet
+      margin-bottom: 6px
+
+    @media $desktop
+      margin-bottom: 5px
+
+.like-h2
+  font-weight: bold
+  font-size: 20px
+  text-transform: uppercase
+  color: #00206e
+
+  @media $tablet
+    font-size: 26px
+
+  @media $desktop
+    font-size: 32px
+
+
+.like-h4
+  font-size: 10px
+  text-transform: uppercase
+  color: #00206e
+
+  @media $tablet
+    font-size: 16px

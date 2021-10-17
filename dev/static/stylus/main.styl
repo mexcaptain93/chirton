@@ -35,6 +35,10 @@ svg,
 video
 	vertical-align middle
 
+img, picture
+	max-width: 100%
+	max-height: 100%
+
 textarea
 	resize none
 
@@ -63,7 +67,13 @@ button
 .container
 	max-width: 1260px
 	margin: 0 auto
-	padding: 0 42px
+	padding: 0 16px
+
+	@media $tablet
+		padding: 0 31px
+
+	@media $desktop
+		padding: 0 42px
 
 @import 'common.styl'
 
@@ -72,4 +82,4 @@ button
 
 // СТРАНИЦЫ
 // Главная страница
-@import 'pages/index/index.styl'
+@import 'pages/index.styl'

@@ -1,9 +1,10 @@
 .btn
   position: relative
   display: inline-block
-  padding: 5px 28px 5px 12px
+  padding: 5px 28px 4px 12px
   border: 1px solid #00206E
   border-radius: 50px
+  transition: 0.3s all ease
   
   font-size: 8px
   font-weight: bold
@@ -12,11 +13,18 @@
   letter-spacing: -0.2px
   white-space: nowrap
 
+  &:hover
+    background-color: #00206E
+    color: #ffffff
+
+    &::before
+      background-image: url('../img/svg/btn-arrow-white.svg')
+
   @media $tablet
     font-size: 10px
 
   @media $desktop
-    padding: 5px 35px 5px 19px
+    padding: 5px 35px 4px 19px
 
     font-size: 12px
 
@@ -46,6 +54,27 @@
 
     &::before
       background-image: url('../img/svg/btn-arrow-white.svg')
+
+    &:hover
+      background-color: #ffffff
+      color: #00206E
+
+      &::before
+        background-image: url('../img/svg/btn-arrow.svg')
+      
+  &_blue
+    color: #ffffff
+    background-color: #00206E
+
+    &::before
+      background-image: url('../img/svg/btn-arrow-white.svg')
+
+    &:hover
+      background-color: transparent
+      color: #00206E
+
+      &::before
+        background-image: url('../img/svg/btn-arrow.svg')
 
 
 
