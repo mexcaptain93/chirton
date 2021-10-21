@@ -183,17 +183,31 @@
     @media $desktop
       margin-bottom: 5px
 
+  &_content
+
+    @media $tablet
+      margin-bottom: 34px
+
+    @media $desktop
+      margin-bottom: 52px
+
+    .like-h2
+      margin-bottom: 0
+
 .like-h2
   font-weight: bold
   font-size: 20px
+  line-height: 24px
   text-transform: uppercase
   color: #00206e
 
   @media $tablet
     font-size: 26px
+    line-height: 32px
 
   @media $desktop
     font-size: 32px
+    line-height: 38px
 
 
 .like-h4
@@ -203,3 +217,100 @@
 
   @media $tablet
     font-size: 16px
+
+.breadcrumbs
+  margin-bottom: 4px
+
+  font-size: 12px
+  line-height: 14px
+  color: #0090D0
+
+  @media $tablet
+    margin-bottom: 6px
+
+    font-size: 16px
+    line-height: 19px
+    color: #00206e
+
+  &__list
+    display: flex
+    flex-wrap: wrap
+
+  &__item
+    margin-right: 4px
+    margin-bottom: 4px
+
+    @media $tablet
+      margin-bottom: 6px
+
+    &::after
+      content: '/'
+      display: inline-block
+
+      margin-left: 8px
+
+    &:last-child
+
+      &::after
+        display: none
+
+.pagination
+  display: flex
+  align-items: center
+  justify-content: space-between
+  max-width: 394px
+  margin: 0 auto 35px
+
+  font-size: 14px
+  line-height: 16px
+  color: #00206e
+
+  @media $desktop
+    display: none
+
+  &__list
+    display: flex
+
+  &__item
+    width: 29px
+    height: 29px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+
+    font-size: 12px
+    line-height: 14px
+
+    &_active
+      background-color: #00206e
+      color: #ffffff
+
+
+  &__prev, &__next
+    position: relative
+
+    &::before
+      content: ''
+      display: block
+      width: 7px
+      height: 13px
+      background-image: url('../img/svg/pagination-arrow.svg')
+      background-repeat: no-repeat
+      background-size: cover
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+
+  &__prev
+    padding-left: 15px
+
+    &::before
+      left: 0
+
+  &__next
+    padding-right: 15px
+
+    &::before
+      right: 0
+      transform: translateY(-50%) rotate(180deg)

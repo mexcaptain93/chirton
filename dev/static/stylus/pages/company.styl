@@ -1,0 +1,119 @@
+.company
+
+  &__top
+    margin-bottom: 23px
+
+    @media $tablet
+      display: flex
+      align-items: flex-start
+      margin-bottom: 43px
+
+  &__main
+
+    @media $tablet
+      padding-right: 30px
+
+  &__right
+
+    @media $desktop
+      padding-top: 97px
+
+
+  &__text
+    font-size: 12px
+    line-height: 14px
+    color: #00206e
+
+    @media $desktop
+      font-size: 16px
+      line-height: 19px
+
+    p
+      margin-bottom: 14px
+
+      &:last-child
+        margin-bottom: 0
+
+  &__benefits
+    margin-bottom: 43px
+
+    @media $tablet
+      margin-bottom: 0
+
+  .benefits
+
+    &__list
+      display: flex
+
+      @media $tablet
+        flex-direction: column
+
+      @media $desktop
+        width: 370px
+
+    &__item
+      width: calc(100% / 3)
+      display: flex
+      flex-direction: column
+      align-items: center
+
+      font-weight: bold
+
+      font-size: 8px
+      line-height: 9px
+      text-transform: uppercase
+      text-align: center
+      color: #00206e
+
+      @media $tablet
+        width: 216px
+        margin-bottom: 54px
+
+        font-size: 18px
+        line-height: 21px
+        font-weight: 400
+
+      @media $desktop
+        flex-direction: row
+        text-align: left
+
+      &:last-child
+
+        @media $tablet
+          margin-bottom: 0
+
+      &:nth-child(2)
+
+        img
+
+          @media $desktop
+            margin-right: 40px
+
+      img
+        height: 40px
+        margin-bottom: 7px
+
+        @media $tablet
+          height: 68px
+          margin-bottom: 12px
+
+        @media $desktop
+          height: 74px
+          margin-right: 51px
+
+  &__brands
+    margin-bottom: 38px
+
+  .brands
+
+    &__list
+      display: flex
+      flex-wrap: wrap
+
+    &__item
+      width: calc(100% / 4)
+
+      @media $tablet
+        width: calc(100% / 7)
+
+

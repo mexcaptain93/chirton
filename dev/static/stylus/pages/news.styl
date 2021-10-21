@@ -1,0 +1,102 @@
+.news-block
+
+  &:hover
+    box-shadow: 10px 10px 10px 00 #0000001A
+
+  &__img
+    position: relative
+    padding-bottom: 53%
+    margin-bottom: 10px
+
+    @media $tablet
+      padding-bottom: 70%
+      margin-bottom: 16px
+
+    @media $desktop
+      margin-bottom: 26px
+
+    picture
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+  &__date
+    position: absolute
+    z-index: 2
+    top: 0
+    right: 10px
+    background: #00206E
+    padding: 3px 15px 4px 12px
+    border-bottom-left-radius: 5px
+    border-bottom-right-radius: 5px
+
+    font-size: 12px
+    line-height: 14px
+    color: #ffffff
+
+    @media $tablet
+      right: 8px
+
+    @media $desktop
+      right: 11px
+
+
+  &__title
+    margin-bottom: 8px
+
+    font-size: 18px
+    line-height: 22px
+    font-weight: bold
+    text-transform: uppercase
+    color: #00206e
+
+    @media $desktop
+      margin-bottom: 6px
+
+      font-size: 24px
+      line-height: 29px
+
+  &__descr
+    margin-bottom: 8px
+
+    font-size: 12px
+    line-height: 14px
+    color: #00206e
+
+    @media $tablet
+      margin-bottom: 16px
+
+    @media $desktop
+      margin-bottom: 13px
+
+      font-size: 16px
+      line-height: 19px
+
+  .btn
+    font-size: 12px
+    line-height: 14px
+
+.news
+
+  &__list
+    display: grid
+    grid-template-columns: 1fr
+    grid-gap: 16px
+    margin-bottom: 34px
+
+    @media $tablet
+      grid-template-columns: repeat(3, 1fr)
+      grid-gap: 30px
+      margin-bottom: 30px
+
+    @media $desktop
+      grid-template-columns: repeat(4, 1fr)
+      grid-gap: 52px 30px
+      margin-bottom: 40px
