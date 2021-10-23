@@ -100,3 +100,104 @@
       grid-template-columns: repeat(4, 1fr)
       grid-gap: 52px 30px
       margin-bottom: 40px
+
+.news-detail
+
+  &__img
+    margin-bottom: 16px
+
+    @media $tablet
+      display: none
+
+  &__img-desktop
+    display: none
+
+    @media $tablet
+      display: block
+      margin-bottom: 20px
+      text-align: center
+
+    @media $desktop
+      max-width: 1260px
+      margin: 0 auto
+      padding: 0 42px
+
+  &__content
+    margin-bottom: 35px
+
+    color: #00206e
+    font-size: 12px
+    line-height: 14px
+
+    @media $desktop
+      font-size: 16px
+      line-height: 19px
+
+    img
+      display: block
+      margin: 8px 0
+
+      @media $desktop
+        margin: 29px 0
+
+    li
+      list-style-type: disc
+      margin-left: 15px
+
+    .float-desktop
+
+      @media $desktop
+        float: left
+        margin-right: 45px
+
+        & + *
+          margin-top: 29px
+
+
+  &__other
+
+    .heading
+
+      @media $tablet
+        display: none
+
+  .news
+
+    &__list
+      overflow: auto
+      display: flex
+      grid-gap: unset
+      padding-bottom: 15px
+      margin-bottom: 21px
+      margin-right: -16px
+      padding-right: 16px
+
+      @media $tablet
+        padding: 0
+        margin: 0
+        overflow: unset
+        flex-direction: column
+
+    &__item
+      width: 216px
+      margin-right: 24px
+      flex-shrink: 0
+
+      @media $tablet
+        width: 100%
+        margin-bottom: 30px
+
+      @media $desktop
+        margin-bottom: 38px
+
+      &:last-child
+        margin-right: 0
+        margin-bottom: 0
+
+  .breadcrumbs + .heading
+
+    @media $tablet
+      display: none
+
+
+

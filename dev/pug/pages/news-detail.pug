@@ -1,0 +1,83 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Продукция'
+    - var pageClass = 'news-detail'
+
+block content
+
+    .news-detail__img-desktop
+        img(src='static/img/content/news-detail-content-desktop.jpg' alt='Chirton light air')
+
+    .container.container_page
+        .breadcrumbs
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a(href='#') Главная
+                li.breadcrumbs__item
+                    a(href='#') Что нового
+                li.breadcrumbs__item
+                    a(href='#') Chirton light air
+
+        .heading.heading_content
+            .like-h2 Chirton light air
+
+    .news-detail__img
+        img(src='static/img/content/news-detail.jpg' alt='Chirton light air')
+
+
+    .container
+        .page
+            .page__main
+                .heading
+                    .heading__left
+                        .like-h2 Chirton light air
+                .news-detail__content
+                    p Освежитель – ароматизатор воздуха (ароматическое саше) серии «Chirton» («Чиртон»)
+                    ul
+                        li Предназначено для ароматизации воздуха в шкафах и комодах.
+                        li Устраняет неприятные запахи и освежает воздух.
+                        li Придаёт вещам и одежде неповторимые восхитительные ароматы на долгое время.
+                        li Обладает длительным сроком действия.
+                    img(src='static/img/content/news-detail-content.jpg' alt='Chirton light air').float-desktop
+                    p Освежитель – ароматизатор воздуха (ароматическое саше) серии «Chirton» («Чиртон»)
+                        ul
+                            li Предназначено для ароматизации воздуха в шкафах и комодах.
+                            li Устраняет неприятные запахи и освежает воздух.
+                            li Придаёт вещам и одежде неповторимые восхитительные ароматы на долгое время.
+                            li Обладает длительным сроком действия.
+            .page__sidebar
+                .news-detail__other
+                    .heading
+                        .like-h2 Другие новости
+                    .news__list
+                        .news__item
+                            .news-block
+                                .news-block__img
+                                    .news-block__date
+                                        span 12.04.20
+                                    picture
+                                        source(srcset="/static/img/content/news-1-desktop.jpg" media="(min-width: 1280px)")
+                                        source(srcset="/static/img/content/news-1-tablet.jpg" media="(min-width: 768px)")
+                                        img(srcset="/static/img/content/news-1.jpg" alt="Chirton light air")
+                                .news-block__title
+                                    span Chirton Light Air
+                                .news-block__descr
+                                    span Серия освежителей для воздуха
+                                .news-block__btn
+                                    a(href='#').btn Перейти
+                        .news__item
+                            .news-block
+                                .news-block__img
+                                    .news-block__date
+                                        span 12.04.20
+                                    picture
+                                        source(srcset="/static/img/content/news-1-desktop.jpg" media="(min-width: 1280px)")
+                                        source(srcset="/static/img/content/news-1-tablet.jpg" media="(min-width: 768px)")
+                                        img(srcset="/static/img/content/news-1.jpg" alt="Chirton light air")
+                                .news-block__title
+                                    span Chirton Light Air
+                                .news-block__descr
+                                    span Серия освежителей для воздуха
+                                .news-block__btn
+                                    a(href='#').btn Перейти

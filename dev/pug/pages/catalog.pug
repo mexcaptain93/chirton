@@ -1,0 +1,96 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Продукция'
+    - var pageClass = 'catalog'
+
+block content
+
+
+    .container.container_pl
+        .breadcrumbs
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a(href='#') Главная
+                li.breadcrumbs__item
+                    a(href='#') Продукция
+
+        .heading
+            .heading__left
+                .like-h2 Продукция
+
+        .catalog__filter
+        .catalog__main
+            .catalog__top
+                .catalog__filter-icon
+                .catalog__subheading
+                    span незаменимые помощники в вашем доме!
+                .catalog__sort
+            ul.catalog__list
+                li.catalog__item
+                    .product-card
+                        .product-card__img
+                            img(src='static/img/content/product-card-1.jpg' alt='product')
+                        .product-card__firm
+                            span Chirton
+                        .product-card__name
+                            span Ароматическое саше “Солнечное настроение”
+                        .product-card__bottom
+                            .product-card__param
+                                span 120г.
+                            .product-card__btn
+                                a.btn.btn_blue(href='#') подробнее
+
+
+        .company__top
+            .company__main
+                .heading
+                    .heading__left
+                        .like-h2 компания chirton
+                        .like-h4 компания основана в 1993 году
+
+                .company__text
+                    p Торговая марка Chirton широко известна и представлена в странах СНГ и на Российском рынке уже более 25 лет.
+                    p Вся продукция сертифицирована, соответствует стандартам и ГОСТам, принятым в РФ, а качество продукции отвечает самым взыскательным требованиям потребителей. Качество продукции протестировано миллионами постоянных покупателей.
+                    p Товары наших торговых марок зарекомендовали себя надежными помощниками по уходу за домом и стали неотъемлемой частью повседневной жизни потребителей. Вне зависимости, будь то кухня или ванная комната, гостинная или санузел, Chirton с лёгкостью устранит любые неприятные запахи и принесёт в Ваш дом благоухащие ароматы, которые сделают его более комфортным, помогут справиться с загрязнениями, а уборка превратится в лёгкое и приятное занятие.
+                    p Наш ассортимент представлен во всех крупных федеральных и региональных сетях.
+                    p Продукция производится на современном отечественном и на импортном оборудовании из высококачественного импортного и отечественного сырья в строгом соответствии с Европейскими и Российскими стандартами качества.
+                    p Ассортимент компании увеличивается из года в год, благодаря инновационным подходам в производстве и насчитывает более 250 наименований.
+            .company__right
+                .company__benefits.benefits
+                    ul.benefits__list
+                        li.benefits__item
+                            img(src='/static/img/svg/benefit-1.svg' alt='Современное оборудование')
+                            span Современное оборудование
+                        li.benefits__item
+                            img(src='/static/img/svg/benefit-2.svg' alt='Стандарты качества')
+                            span Стандарты качества
+                        li.benefits__item
+                            img(src='/static/img/svg/benefit-3.svg' alt='Более 250 наименований')
+                            span Более 250 наименований
+
+        .heading
+            .heading__left
+                .like-h2 Бренды
+            .heading__right
+                a(href='#').btn Перейти в каталог
+        .company__brands.brands
+            ul.brands__list
+                li.brands__item
+                    img(src='/static/img/content/brand-1.png' alt='Бренд')
+                li.brands__item
+                    img(src='/static/img/content/brand-2.png' alt='Бренд')
+                li.brands__item
+                    img(src='/static/img/content/brand-3.png' alt='Бренд')
+                li.brands__item
+                    img(src='/static/img/content/brand-4.png' alt='Бренд')
+                li.brands__item
+                    img(src='/static/img/content/brand-5.png' alt='Бренд')
+                li.brands__item
+                    img(src='/static/img/content/brand-6.png' alt='Бренд')
+                li.brands__item
+                    img(src='/static/img/content/brand-7.png' alt='Бренд')
+                li.brands__item
+                    img(src='/static/img/content/brand-8.png' alt='Бренд')
+                li.brands__item
+                    img(src='/static/img/content/brand-9.png' alt='Бренд')
