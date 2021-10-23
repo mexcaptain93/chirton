@@ -1,0 +1,49 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Контакты'
+    - var pageClass = 'contacts'
+
+block content
+
+    .container.container_pl
+        .breadcrumbs
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a(href='#') Главная
+                li.breadcrumbs__item
+                    a(href='#') контакты
+
+        .heading.heading_content
+            .like-h2 Контакты
+
+    .container
+        .contacts__main
+            .contacts__text
+                ul.contacts__list
+                    li.contacts__item
+                        .contacts__title
+                            span Телефон
+                        .contacts__value
+                            a(href='tel:+74957753938') +7(495) 775-39-38
+                    li.contacts__item
+                        .contacts__title
+                            span e-mail:
+                        .contacts__value
+                            a(href='mailto:office@transatlantic.ru') office@transatlantic.ru
+                    li.contacts__item
+                        .contacts__title
+                            span Телефон
+                        .contacts__value
+                            span Россия, Москва, 119330, улица Улофа Пальме 1
+                .contacts__socials.socials
+                    ul.socials__list
+                        li.socials__item.socials__item_whatsapp
+                            a(href='#')
+                        li.socials__item.socials__item_instagram
+                            a(href='#')
+                        li.socials__item.socials__item_youtube
+                            a(href='#')
+
+            .contacts__map
+                img(src='static/img/content/contacts-map.jpg' alt='')
