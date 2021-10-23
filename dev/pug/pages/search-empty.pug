@@ -1,0 +1,23 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Поиск'
+    - var pageClass = 'news search'
+
+block content
+
+
+    .container.container_pl
+        .breadcrumbs
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a(href='#') Главная
+                li.breadcrumbs__item
+                    a(href='#') поиск
+
+        .heading.heading_content
+            .like-h2 Поиск “sdsds”
+
+        .search__count
+            span Извините, по Вашему запросу ничего не найдено. #[br] Пожалуйста, попробуйте снова, используя другие ключевые слова.
+    .container
