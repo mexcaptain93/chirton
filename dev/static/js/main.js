@@ -1,5 +1,6 @@
 $(function(){
     searchPlaceholder()
+    productSlider()
 })
 
 $(window).on('resize', function(){
@@ -11,4 +12,11 @@ function searchPlaceholder() {
     placeholder = ($(window).width() <= 767) ? 'Поиск' : 'Название или артикул товара'
 
     input.attr('placeholder', placeholder)
+}
+
+function productSlider() {
+    $('.js-product-slider').slick({
+        prevArrow: '<a href="#" class="gallery__prev"></a>',
+        nextArrow: '<a href="#" class="gallery__next"></a>'
+    })
 }

@@ -1,0 +1,196 @@
+.product
+
+
+  .container_pl
+
+    @media $tablet
+      padding-left: 279px
+
+    @media $desktop
+      padding-left: 332px
+
+  &__main
+
+    @media $tablet
+      display: flex
+
+
+  &__text
+    font-size: 12px
+    line-height: 14px
+
+    @media $desktop
+      font-size: 16px
+      line-height: 19px
+
+    & > ul li
+      list-style-type: square
+      margin-left: 15px
+
+
+    .bold
+      margin-top: 16px
+      margin-bottom: 4px
+
+      font-size: 14px
+      line-height: 17px
+      font-weight: bold
+
+      @media $tablet
+        margin-top: 20px
+
+      @media $desktop
+        margin-bottom: 6px
+        margin-top: 30px
+
+  &__specs
+    margin-top: 16px
+    margin-bottom: 40px
+
+    @media $tablet
+      margin-bottom: 20px
+
+  .specs
+
+    &__list
+      display: grid
+      grid-gap: 17px 16px
+      grid-template-columns 1fr 1fr
+
+      @media $tablet
+        grid-gap 20px 30px
+
+    &__title
+      margin-bottom: 4px
+
+      font-size: 14px
+      line-height: 17px
+      font-weight: bold
+
+  &__range
+    margin-bottom: 24px
+
+  .range
+
+    &__line
+      display: flex
+      justify-content: space-between
+      padding: 6px 16px
+      margin: 0 -16px
+
+      @media $tablet
+        margin: 0
+
+        padding: 12px 10px
+
+      &_heading
+        font-weight: bold
+
+        &:first-child
+
+          @media $tablet
+            padding-left: 0
+            padding-right: 0
+
+      &:nth-child(even)
+        background: rgba(0, 172, 236, 0.2)
+
+    &__item
+      width: calc((100% - 24px) / 2)
+
+
+  &__gallery
+    margin-bottom: 16px
+
+    @media $tablet
+      width: 216px
+      margin-bottom: 0
+      margin-right: 32px
+
+    @media $desktop
+      width: 250px
+      margin-right: 40px
+
+  .gallery
+
+    &__list
+      position: relative
+
+    &__item
+      height: 128px
+
+      @media $tablet
+        height: auto
+
+      img
+        margin: 0 auto
+
+    &__prev
+      display: block
+      position: absolute
+      z-index: 5
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
+      background: lighten(#00ACEC, 32)
+      border-radius: 50%
+      width: 37px
+      height: 37px
+
+      @media $tablet
+        background: none
+        top: calc(100% + 19px)
+        transform: none
+        left: 35px
+
+      @media $desktop
+        left: 50px
+        top: calc(100% + 54px)
+
+      &::before
+        display: block
+        content: ''
+        width: 12px
+        height: 20px
+        position: absolute
+        top: 9px
+        left: 10px
+        background-repeat: no-repeat
+        background-size: cover
+        background-image: url('../img/svg/slider-arrow-prev.svg')
+        background-position: center center
+
+    &__next
+      display: block
+      position: absolute
+      z-index: 5
+      right: 0
+      top: 50%
+      transform: translateY(-50%)
+      background: lighten(#00ACEC, 32)
+      border-radius: 50%
+      width: 37px
+      height: 37px
+
+      @media $tablet
+        background: none
+        top: calc(100% + 19px)
+        transform: none
+        right: 35px
+
+      @media $desktop
+        top: calc(100% + 54px)
+        right: 50px
+
+      &::before
+        display: block
+        content: ''
+        width: 12px
+        height: 20px
+        position: absolute
+        top: 9px
+        left: 14px
+        background-repeat: no-repeat
+        background-size: cover
+        background-image: url('../img/svg/slider-arrow-next.svg')
+        background-position: center center

@@ -1,0 +1,118 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Гелевый освежитель воздуха'
+    - var pageClass = 'product'
+
+block content
+
+
+    .container.container_pl
+        .breadcrumbs
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a(href='#') Главная
+                li.breadcrumbs__item
+                    a(href='#') Продукция
+                li.breadcrumbs__item
+                    a(href='#') Гелевый освежитель воздуха
+
+        .heading.heading_content
+            .like-h2 Гелевый освежитель воздуха
+
+    .container
+        .product__main
+            .product__gallery.gallery
+                .gallery__list.js-product-slider
+                    .gallery__item
+                        img(src='/static/img/content/product.jpg' alt='Гелевый освежитель воздуха')
+                    .gallery__item
+                        img(src='/static/img/content/product.jpg' alt='Гелевый освежитель воздуха')
+                    .gallery__item
+                        img(src='/static/img/content/product.jpg' alt='Гелевый освежитель воздуха')
+                    .gallery__item
+                        img(src='/static/img/content/product.jpg' alt='Гелевый освежитель воздуха')
+
+
+            .product__content
+                .product__text
+                    p Освежитель – ароматизатор воздуха (ароматическое саше) серии «Chirton» («Чиртон»)
+                    ul
+                        li Предназначено для ароматизации воздуха в шкафах и комодах.
+                        li Устраняет неприятные запахи и освежает воздух.
+                        li Придаёт вещам и одежде неповторимые восхитительные ароматы на долгое время.
+                        li Обладает длительным сроком действия.
+                    p.bold Способы применения
+                    p Открыть упаковку и достать оттуда бумажный пакетик с ароматическим саше. Поместить пакетик с саше в ящик с бельём, в комод или платяной шкаф. ВНИМАНИЕ! Бумажный пакетик с ароматическим саше вскрывать не надо!
+                    p.bold Меры предосторожности
+                    p Использовать только по назначению! Не вскрывать! Не глотать! Беречь от детей! Хранить отдельно от пищевых продуктов в сухом недоступном для детей месте. После использования или по окончании срока годности упаковку утилизировать как бытовой отход.
+                    p.bold Состав
+                    p целлюлоза > 30%, ароматическая композиция < 5%.
+                    .product__specs.specs
+                        ul.specs__list
+                            li.specs__item
+                                .specs__title
+                                    span Масса нетто
+                                .specs__value
+                                    span 15 гр.
+                            li.specs__item
+                                .specs__title
+                                    span Кол-во в упаковке
+                                .specs__value
+                                    span 40 шт.
+                            li.specs__item
+                                .specs__title
+                                    span Срок годности
+                                .specs__value
+                                    span 36 месяцев с даты изготовления.
+                            li.specs__item
+                                .specs__title
+                                    span Страна-изготовитель
+                                .specs__value
+                                    span Россия
+                    .product__range.range
+                        .range__line.range__line_heading
+                            .range__item
+                                span Ассортимент
+                            .range__item
+                                span Штрих-код товара
+                        .range__line
+                            .range__item
+                                span Весенние Цветы
+                            .range__item
+                                span 4670013301928
+                        .range__line
+                            .range__item
+                                span Дыхание Моря
+                            .range__item
+                                span 4670013301928
+                        .range__line
+                            .range__item
+                                span Лимонная Свежесть
+                            .range__item
+                                span 4670013301928
+                        .range__line
+                            .range__item
+                                span Мягкость кашемира и Аромат ванили
+                            .range__item
+                                span 4670013301928
+                        .range__line
+                            .range__item
+                                span Нежность шёлка и Лилия
+                            .range__item
+                                span 4670013301928
+                        .range__line
+                            .range__item
+                                span Солнечное Настроение
+                            .range__item
+                                span 4670013301928
+                        .range__line
+                            .range__item
+                                span Сочная Клубника
+                            .range__item
+                                span 4670013301928
+                .pagination
+                    a(href='#').pagination__prev Назад
+
+                    a(href='#').pagination__next Вперед
+
