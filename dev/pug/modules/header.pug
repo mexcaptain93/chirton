@@ -6,7 +6,7 @@ header.header
             .header__search.search
                 form.search__form
                     .search__input
-                        input(type='text' placeholder='Поиск' class='js-header-serach-input').opened
+                        input(type='text' placeholder='Поиск' class='js-header-serach-input' class=(title === 'Поиск') && 'opened')
                         .search__hint.hint
                             .hint__list
                                 a(href='#').hint__item
