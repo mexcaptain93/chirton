@@ -6,7 +6,28 @@ header.header
             .header__search.search
                 form.search__form
                     .search__input
-                        input(type='text' placeholder='Поиск' class='js-header-serach-input')
+                        input(type='text' placeholder='Поиск' class='js-header-serach-input').opened
+                        .search__hint.hint
+                            .hint__list
+                                a(href='#').hint__item
+                                    .hint__img
+                                        img(srcset="/static/img/content/news-1.jpg" alt="Chirton light air")
+                                    .hint__text
+                                        .hint__name
+                                            span Chirton Light Air
+                                        .hint__type
+                                            span Страница товара
+                                a(href='#').hint__item
+                                    .hint__img
+                                        img(srcset="/static/img/content/news-1.jpg" alt="Chirton light air")
+                                    .hint__text
+                                        .hint__name
+                                            span Chirton Light Air
+                                        .hint__type
+                                            span Статья
+                            .hint__count
+                                span Найдено 2 результата
+                            a(href='#').hint__more Показать все
                     .search__submit
                         input(type='submit')
             .header__lang-switcher-top.lang-switcher

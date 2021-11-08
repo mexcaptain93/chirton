@@ -314,3 +314,111 @@
     &::before
       right: 0
       transform: translateY(-50%) rotate(180deg)
+
+
+.select 
+  display: block
+  position: relative
+
+
+.new-select
+  position: relative
+  cursor: pointer
+  user-select: none
+  padding-right: 22px
+
+  font-size: 14px
+  line-height: 16px
+
+
+
+.new-select__list
+  position: absolute
+  top: calc(100% + 14px)
+  right: 0
+  width: 165px
+  cursor: pointer
+  z-index: 2
+  background: #fff
+  user-select: none
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2)
+  border-radius: 5px
+  overflow: hidden
+
+
+.new-select__list.on
+  display: block
+
+
+.new-select__item span
+  display: block
+  padding: 9px 23px
+
+  font-size: 14px
+  line-height: 17px
+
+
+.new-select__item span:hover
+  background-color: #f4f6f8
+
+
+.new-select:after
+  content: ''
+  display: block
+  width: 13px
+  height: 7px
+  position: absolute
+  right: 0
+  top: 4px
+  background: url('../img/svg/select-arrow.svg') no-repeat right center / cover
+  transition: all .27s ease-in-out
+  transform: rotate(180deg)
+
+
+.new-select.on:after
+  transform: rotate(0deg)
+
+
+.checkbox
+
+  label
+    padding-left: 26px
+    position: relative
+    font-size: 16px
+    line-height: 19px
+
+    &::after
+      content: ''
+      display: block
+      width: 18px
+      height: 18px
+      position: absolute
+      top: 50%
+      left: 0
+      transform: translateY(-50%)
+      background-repeat: no-repeat
+      background-position: center center
+      background-size: cover
+      background-image: url('../img/svg/checkbox.svg')
+
+
+  input
+    display: none
+
+    &:checked + label
+
+      &::after
+        width: 23px
+        background-image: url('../img/svg/checkbox-checked.svg')
+
+.input
+  padding: 5px 5px
+  border: 1px solid #00ACEC
+  border-radius: 6px
+  max-width: 100%
+
+  font-weight: bold
+  font-size: 18px
+  line-height: 22px
+  color: #00206e

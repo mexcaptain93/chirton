@@ -19,78 +19,318 @@ block content
             .heading__left
                 .like-h2 Продукция
 
-        .catalog__filter
+    .container
         .catalog__main
-            .catalog__top
-                .catalog__filter-icon
-                .catalog__subheading
-                    span незаменимые помощники в вашем доме!
-                .catalog__sort
-            ul.catalog__list
-                li.catalog__item
-                    .product-card
-                        .product-card__img
-                            img(src='static/img/content/product-card-1.jpg' alt='product')
-                        .product-card__firm
-                            span Chirton
-                        .product-card__name
-                            span Ароматическое саше “Солнечное настроение”
-                        .product-card__bottom
-                            .product-card__param
-                                span 120г.
-                            .product-card__btn
-                                a.btn.btn_blue(href='#') подробнее
+            .catalog__filter.filter
+                .filter__heading
+                    span Фильтры
+                ul.filter__params
+                    .filter__param.filter__param_opened
+                        .filter__title
+                            span Бренд
+                        .filter__values(style='display: block')
+                            .filter__checkboxes
+                                .checkbox
+                                    input(type='checkbox' id='ch1')
+                                    label(for='ch1') Chirton
+                                .checkbox
+                                    input(type='checkbox' id='ch2')
+                                    label(for='ch2') Rio Royal
+                                .checkbox
+                                    input(type='checkbox' id='ch3')
+                                    label(for='ch3') Liaаra
+                                .checkbox
+                                    input(type='checkbox' id='ch4')
+                                    label(for='ch4') Tik Tak
+                                .checkbox
+                                    input(type='checkbox' id='ch5')
+                                    label(for='ch5') Dr.Clean
+                                .checkbox
+                                    input(type='checkbox' id='ch6')
+                                    label(for='ch6') Jiva
+                                .checkbox
+                                    input(type='checkbox' id='ch7')
+                                    label(for='ch7') Mr.Volt
+                    .filter__param
+                        .filter__title
+                            span Назначение
+                        .filter__values
+                            .filter__checkboxes
+                                .checkbox
+                                    input(type='checkbox' id='ch8')
+                                    label(for='ch8') Кухня
+                                .checkbox
+                                    input(type='checkbox' id='ch9')
+                                    label(for='ch9') Санузел
+                                .checkbox
+                                    input(type='checkbox' id='ch10')
+                                    label(for='ch10') Гараж
+                                .checkbox
+                    .filter__param
+                        .filter__title
+                            span Тип продукта
+                        .filter__values
+                            .filter__checkboxes
+                                .checkbox
+                                    input(type='checkbox' id='ch11')
+                                    label(for='ch11') Ароматизатор
+                                .checkbox
+                                    input(type='checkbox' id='ch12')
+                                    label(for='ch12') Средство для мытья
+                                .checkbox
+                                    input(type='checkbox' id='ch13')
+                                    label(for='ch13') Мыло
+                                .checkbox
+                    .filter__param.filter__param_opened
+                        .filter__title
+                            span Объем (мл)
+                        .filter__values(style='display: block')
+                            .filter__range
+                                span От
+                                input.input(type='text' value='2')
+                                span до
+                                input.input.input_big(type='text' value='200')
+                                span мл.
 
 
-        .company__top
-            .company__main
-                .heading
-                    .heading__left
-                        .like-h2 компания chirton
-                        .like-h4 компания основана в 1993 году
 
-                .company__text
-                    p Торговая марка Chirton широко известна и представлена в странах СНГ и на Российском рынке уже более 25 лет.
-                    p Вся продукция сертифицирована, соответствует стандартам и ГОСТам, принятым в РФ, а качество продукции отвечает самым взыскательным требованиям потребителей. Качество продукции протестировано миллионами постоянных покупателей.
-                    p Товары наших торговых марок зарекомендовали себя надежными помощниками по уходу за домом и стали неотъемлемой частью повседневной жизни потребителей. Вне зависимости, будь то кухня или ванная комната, гостинная или санузел, Chirton с лёгкостью устранит любые неприятные запахи и принесёт в Ваш дом благоухащие ароматы, которые сделают его более комфортным, помогут справиться с загрязнениями, а уборка превратится в лёгкое и приятное занятие.
-                    p Наш ассортимент представлен во всех крупных федеральных и региональных сетях.
-                    p Продукция производится на современном отечественном и на импортном оборудовании из высококачественного импортного и отечественного сырья в строгом соответствии с Европейскими и Российскими стандартами качества.
-                    p Ассортимент компании увеличивается из года в год, благодаря инновационным подходам в производстве и насчитывает более 250 наименований.
-            .company__right
-                .company__benefits.benefits
-                    ul.benefits__list
-                        li.benefits__item
-                            img(src='/static/img/svg/benefit-1.svg' alt='Современное оборудование')
-                            span Современное оборудование
-                        li.benefits__item
-                            img(src='/static/img/svg/benefit-2.svg' alt='Стандарты качества')
-                            span Стандарты качества
-                        li.benefits__item
-                            img(src='/static/img/svg/benefit-3.svg' alt='Более 250 наименований')
-                            span Более 250 наименований
+                .filter__btns
+                    button.btn.btn_blue Показать
+                    button.btn Сбросить
 
-        .heading
-            .heading__left
-                .like-h2 Бренды
-            .heading__right
-                a(href='#').btn Перейти в каталог
-        .company__brands.brands
-            ul.brands__list
-                li.brands__item
-                    img(src='/static/img/content/brand-1.png' alt='Бренд')
-                li.brands__item
-                    img(src='/static/img/content/brand-2.png' alt='Бренд')
-                li.brands__item
-                    img(src='/static/img/content/brand-3.png' alt='Бренд')
-                li.brands__item
-                    img(src='/static/img/content/brand-4.png' alt='Бренд')
-                li.brands__item
-                    img(src='/static/img/content/brand-5.png' alt='Бренд')
-                li.brands__item
-                    img(src='/static/img/content/brand-6.png' alt='Бренд')
-                li.brands__item
-                    img(src='/static/img/content/brand-7.png' alt='Бренд')
-                li.brands__item
-                    img(src='/static/img/content/brand-8.png' alt='Бренд')
-                li.brands__item
-                    img(src='/static/img/content/brand-9.png' alt='Бренд')
+            .catalog__content
+                .catalog__top
+                    a(href='#').catalog__filter-mobile
+
+                    .catalog__subheading
+                        span незаменимые помощники в вашем доме!
+                    .catalog__sort.sort
+                        .sort__direction
+                            input(type='checkbox' id='sort-direction')
+                            label(for='sort-direction')
+                        .sort__select
+                            select.select(name='sorting')
+                                option По умолчанию
+                                option По популярности
+                                option По новинкам
+                                option По названию
+
+
+                ul.catalog__list
+                    li.catalog__item
+                        .product-card
+                            .product-card__img
+                                img(src='static/img/content/product-card-1.jpg' alt='product')
+                            .product-card__firm
+                                span Chirton
+                            .product-card__name
+                                span Ароматическое саше “Солнечное настроение”
+                            .product-card__bottom
+                                .product-card__param
+                                    span 120г.
+                                .product-card__btn
+                                    a.btn.btn_blue(href='#') подробнее
+                    li.catalog__item
+                        .product-card.product-card_new
+                            .product-card__img
+                                img(src='static/img/content/product-card-1.jpg' alt='product')
+                            .product-card__firm
+                                span Chirton
+                            .product-card__name
+                                span Ароматическое саше “Солнечное настроение”
+                            .product-card__bottom
+                                .product-card__param
+                                    span 120г.
+                                .product-card__btn
+                                    a.btn.btn_blue(href='#') подробнее
+                    li.catalog__item
+                        .product-card
+                            .product-card__img
+                                img(src='static/img/content/product-card-1.jpg' alt='product')
+                            .product-card__firm
+                                span Chirton
+                            .product-card__name
+                                span Ароматическое саше
+                            .product-card__bottom
+                                .product-card__param
+                                    span 120г.
+                                .product-card__btn
+                                    a.btn.btn_blue(href='#') подробнее
+                    li.catalog__item
+                        .product-card
+                            .product-card__img
+                                img(src='static/img/content/product-card-1.jpg' alt='product')
+                            .product-card__firm
+                                span Chirton
+                            .product-card__name
+                                span Ароматическое саше “Солнечное настроение”
+                            .product-card__bottom
+                                .product-card__param
+                                    span 120г.
+                                .product-card__btn
+                                    a.btn.btn_blue(href='#') подробнее
+                    li.catalog__item
+                        .product-card
+                            .product-card__img
+                                img(src='static/img/content/product-card-1.jpg' alt='product')
+                            .product-card__firm
+                                span Chirton
+                            .product-card__name
+                                span Ароматическое саше “Солнечное настроение”
+                            .product-card__bottom
+                                .product-card__param
+                                    span 120г.
+                                .product-card__btn
+                                    a.btn.btn_blue(href='#') подробнее
+                    li.catalog__item
+                        .product-card.product-card_new
+                            .product-card__img
+                                img(src='static/img/content/product-card-1.jpg' alt='product')
+                            .product-card__firm
+                                span Chirton
+                            .product-card__name
+                                span Ароматическое саше “Солнечное настроение”
+                            .product-card__bottom
+                                .product-card__param
+                                    span 120г.
+                                .product-card__btn
+                                    a.btn.btn_blue(href='#') подробнее
+                    li.catalog__item
+                        .product-card
+                            .product-card__img
+                                img(src='static/img/content/product-card-1.jpg' alt='product')
+                            .product-card__firm
+                                span Chirton
+                            .product-card__name
+                                span Ароматическое саше
+                            .product-card__bottom
+                                .product-card__param
+                                    span 120г.
+                                .product-card__btn
+                                    a.btn.btn_blue(href='#') подробнее
+                    li.catalog__item
+                        .product-card
+                            .product-card__img
+                                img(src='static/img/content/product-card-1.jpg' alt='product')
+                            .product-card__firm
+                                span Chirton
+                            .product-card__name
+                                span Ароматическое саше “Солнечное настроение”
+                            .product-card__bottom
+                                .product-card__param
+                                    span 120г.
+                                .product-card__btn
+                                    a.btn.btn_blue(href='#') подробнее
+                    li.catalog__item
+                        .product-card
+                            .product-card__img
+                                img(src='static/img/content/product-card-1.jpg' alt='product')
+                            .product-card__firm
+                                span Chirton
+                            .product-card__name
+                                span Ароматическое саше “Солнечное настроение”
+                            .product-card__bottom
+                                .product-card__param
+                                    span 120г.
+                                .product-card__btn
+                                    a.btn.btn_blue(href='#') подробнее
+                    li.catalog__item
+                        .product-card.product-card_new
+                            .product-card__img
+                                img(src='static/img/content/product-card-1.jpg' alt='product')
+                            .product-card__firm
+                                span Chirton
+                            .product-card__name
+                                span Ароматическое саше “Солнечное настроение”
+                            .product-card__bottom
+                                .product-card__param
+                                    span 120г.
+                                .product-card__btn
+                                    a.btn.btn_blue(href='#') подробнее
+                    li.catalog__item
+                        .product-card
+                            .product-card__img
+                                img(src='static/img/content/product-card-1.jpg' alt='product')
+                            .product-card__firm
+                                span Chirton
+                            .product-card__name
+                                span Ароматическое саше
+                            .product-card__bottom
+                                .product-card__param
+                                    span 120г.
+                                .product-card__btn
+                                    a.btn.btn_blue(href='#') подробнее
+                    li.catalog__item
+                        .product-card
+                            .product-card__img
+                                img(src='static/img/content/product-card-1.jpg' alt='product')
+                            .product-card__firm
+                                span Chirton
+                            .product-card__name
+                                span Ароматическое саше “Солнечное настроение”
+                            .product-card__bottom
+                                .product-card__param
+                                    span 120г.
+                                .product-card__btn
+                                    a.btn.btn_blue(href='#') подробнее
+                    li.catalog__item
+                        .product-card
+                            .product-card__img
+                                img(src='static/img/content/product-card-1.jpg' alt='product')
+                            .product-card__firm
+                                span Chirton
+                            .product-card__name
+                                span Ароматическое саше “Солнечное настроение”
+                            .product-card__bottom
+                                .product-card__param
+                                    span 120г.
+                                .product-card__btn
+                                    a.btn.btn_blue(href='#') подробнее
+                    li.catalog__item
+                        .product-card.product-card_new
+                            .product-card__img
+                                img(src='static/img/content/product-card-1.jpg' alt='product')
+                            .product-card__firm
+                                span Chirton
+                            .product-card__name
+                                span Ароматическое саше “Солнечное настроение”
+                            .product-card__bottom
+                                .product-card__param
+                                    span 120г.
+                                .product-card__btn
+                                    a.btn.btn_blue(href='#') подробнее
+                    li.catalog__item
+                        .product-card
+                            .product-card__img
+                                img(src='static/img/content/product-card-1.jpg' alt='product')
+                            .product-card__firm
+                                span Chirton
+                            .product-card__name
+                                span Ароматическое саше
+                            .product-card__bottom
+                                .product-card__param
+                                    span 120г.
+                                .product-card__btn
+                                    a.btn.btn_blue(href='#') подробнее
+                    li.catalog__item
+                        .product-card
+                            .product-card__img
+                                img(src='static/img/content/product-card-1.jpg' alt='product')
+                            .product-card__firm
+                                span Chirton
+                            .product-card__name
+                                span Ароматическое саше “Солнечное настроение”
+                            .product-card__bottom
+                                .product-card__param
+                                    span 120г.
+                                .product-card__btn
+                                    a.btn.btn_blue(href='#') подробнее
+                .pagination
+                    a(href='#').pagination__prev Назад
+                    .pagination__list
+                        a(href='#').pagination__item 1
+                        a(href='#').pagination__item 2
+                        a(href='#').pagination__item.pagination__item_active 3
+                        a(href='#').pagination__item 4
+                    a(href='#').pagination__next Вперед
+
