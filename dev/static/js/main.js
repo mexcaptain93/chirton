@@ -1,26 +1,31 @@
 $(function(){
-    searchPlaceholder()
-    productSlider()
-    select()
-    filter()
-})
+    searchPlaceholder();
+    productSlider();
+    select();
+    filter();
+    mobmenu();
+    topSlider();
+    phoneMask();
+    feedbackPopup();
+    filterPopup();
+});
 
 $(window).on('resize', function(){
-    searchPlaceholder()
-})
+    searchPlaceholder();
+});
 
 function searchPlaceholder() {
-    input = $('.js-header-serach-input')
-    placeholder = ($(window).width() <= 767) ? 'Поиск' : 'Название или артикул товара'
+    input = $('.js-header-serach-input');
+    placeholder = ($(window).width() <= 767) ? 'Поиск' : 'Название или артикул товара';
 
-    input.attr('placeholder', placeholder)
+    input.attr('placeholder', placeholder);
 }
 
 function productSlider() {
     $('.js-product-slider').slick({
         prevArrow: '<a href="#" class="gallery__prev"></a>',
         nextArrow: '<a href="#" class="gallery__next"></a>'
-    })
+    });
 }
 
 function select() {
@@ -82,7 +87,62 @@ function select() {
 
 function filter() {
     $('.filter__title').on('click', function () {
-        $(this).siblings('.filter__values').slideToggle()
-        $(this).parent().toggleClass('filter__param_opened', 500)
-    })
+        $(this).siblings('.filter__values').slideToggle();
+        $(this).parent().toggleClass('filter__param_opened', 500);
+    });
+}
+
+function mobmenu() {
+    $('.js-mobile-menu-opener').on('click', function (e) {
+        e.preventDefault();
+        $('.js-mobile-menu').slideToggle();
+        $('body').toggleClass('stop-scroll');
+    });
+}
+
+function topSlider() {
+    $('.js-top-slider').slick({
+        autoplay: true,
+        arrows: false,
+        dots: true
+    });
+}
+
+function phoneMask() {
+    $('.js-phone').mask('+7-(999)-999-99-99');
+}
+
+function feedbackPopup() {
+    $('.js-feedback-opener').on('click', function (e) {
+        e.preventDefault();
+        $('.js-popup-feedback').show();
+        $('body').addClass('stop-scroll');
+
+        if ($('.js-mobile-menu').is(':visible')) {
+            $('.js-mobile-menu').slideUp();
+        }
+    });
+
+    $('.js-popup-feedback .popup__overlay, .js-feedback-close').on('click', function (e) {
+        if (e.target === this) {
+            e.preventDefault();
+            $('.js-popup-feedback').hide();
+            $('body').removeClass('stop-scroll');
+        }
+    });
+}
+
+function filterPopup() {
+    $('.js-filter-opener').on('click', function (e) {
+        e.preventDefault();
+        $('.js-filter').show();
+    });
+
+    $('.js-filter .filter__overlay, .js-filter-close').on('click', function (e) {
+        if (e.target === this) {
+            e.preventDefault();
+            $('.js-filter').hide();
+
+        }
+    });
 }

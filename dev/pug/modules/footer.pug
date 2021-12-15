@@ -52,7 +52,7 @@ footer.footer
                     .contacts__address
                         a(href='#') г. Москва, ул.#[br] Неверовского, д. 10, стр. 3 БЦ  «Сrosswall»
                 .contacts__block
-                    .contacts__feedback-btn
+                    .contacts__feedback-btn.js-feedback-opener
                         a(href='#').btn.btn_white Обратная связь
                     .footer__socials.socials
                         ul.socials__list
@@ -62,3 +62,22 @@ footer.footer
                                 a(href='#')
                             li.socials__item.socials__item_youtube
                                 a(href='#')
+
+.popup.popup-feedback.js-popup-feedback
+    .popup__overlay
+        .popup__content
+            .popup__close.js-feedback-close
+            .popup__heading
+                span Обратная связь
+            form.form
+                input(type='text' placeholder='Ильяс Иванович Добронравов').input
+                input(type='text' placeholder='+7-(___)-___-__-__').js-phone.input.input_phone
+                input(type='text' placeholder='email*').input.input_email
+                textarea(placeholder='Ваше сообщение *').input
+                .checkbox
+                    input(type='checkbox' id='ch_feedback')
+                    label(for='ch_feedback') Настоящим подтверждаю, что я ознакомлен с #[a(href='#') условиями политики] в отношении обработки персональных данных
+                span.required *–обязательные поля для заполнения
+                button.btn.btn_blue Отправить
+
+

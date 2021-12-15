@@ -8,6 +8,53 @@
   @media $desktop
     margin-bottom: 40px
 
+  &__list
+    position: relative
+
+  .slick-dots
+    display: none !important
+
+    @media $tablet
+      display: flex !important
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
+      bottom: 18px
+      padding: 0 31px
+      max-width: 100%
+
+    @media $tablet
+      bottom: 20px
+
+    li
+      flex-shrink: 1
+      width: 54px
+      margin-right: 10px
+      opacity: 0.7
+      transition: .3s ease all
+      cursor: pointer
+
+      font-size: 0
+      line-height: 0
+
+      &:last-child
+        margin-right: 0
+
+      &.slick-active
+        width: 108px
+        opacity: 1
+
+    button
+      border: none
+      appearance: none
+      background: #F3F3F3
+
+      height: 6px
+      width: 100%
+      border-radius: 10px
+      transition: .3s ease all
+
+
   .slide
     position: relative
     height: 208px
@@ -422,3 +469,34 @@
   font-size: 18px
   line-height: 22px
   color: #00206e
+
+
+.socials
+
+  &__list
+    display: flex
+    justify-content: center
+
+  &__item
+    width: 24px
+    height: 24px
+    margin-right: 20px
+    background-repeat: no-repeat
+    background-size: contain
+
+    &:last-child
+      margin-right: 0
+
+    &_whatsapp
+      background-image: url('../img/svg/whatsapp.svg')
+
+    &_instagram
+      background-image: url('../img/svg/instagram.svg')
+
+    &_youtube
+      background-image: url('../img/svg/youtube.svg')
+
+    a
+      display: block
+      height: 100%
+      width: 100%

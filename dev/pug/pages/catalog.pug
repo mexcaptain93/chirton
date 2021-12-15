@@ -21,89 +21,89 @@ block content
 
     .container
         .catalog__main
-            .catalog__filter.filter
-                .filter__heading
-                    span Фильтры
-                ul.filter__params
-                    .filter__param.filter__param_opened
-                        .filter__title
-                            span Бренд
-                        .filter__values(style='display: block')
-                            .filter__checkboxes
-                                .checkbox
-                                    input(type='checkbox' id='ch1')
-                                    label(for='ch1') Chirton
-                                .checkbox
-                                    input(type='checkbox' id='ch2')
-                                    label(for='ch2') Rio Royal
-                                .checkbox
-                                    input(type='checkbox' id='ch3')
-                                    label(for='ch3') Liaаra
-                                .checkbox
-                                    input(type='checkbox' id='ch4')
-                                    label(for='ch4') Tik Tak
-                                .checkbox
-                                    input(type='checkbox' id='ch5')
-                                    label(for='ch5') Dr.Clean
-                                .checkbox
-                                    input(type='checkbox' id='ch6')
-                                    label(for='ch6') Jiva
-                                .checkbox
-                                    input(type='checkbox' id='ch7')
-                                    label(for='ch7') Mr.Volt
-                    .filter__param
-                        .filter__title
-                            span Назначение
-                        .filter__values
-                            .filter__checkboxes
-                                .checkbox
-                                    input(type='checkbox' id='ch8')
-                                    label(for='ch8') Кухня
-                                .checkbox
-                                    input(type='checkbox' id='ch9')
-                                    label(for='ch9') Санузел
-                                .checkbox
-                                    input(type='checkbox' id='ch10')
-                                    label(for='ch10') Гараж
-                                .checkbox
-                    .filter__param
-                        .filter__title
-                            span Тип продукта
-                        .filter__values
-                            .filter__checkboxes
-                                .checkbox
-                                    input(type='checkbox' id='ch11')
-                                    label(for='ch11') Ароматизатор
-                                .checkbox
-                                    input(type='checkbox' id='ch12')
-                                    label(for='ch12') Средство для мытья
-                                .checkbox
-                                    input(type='checkbox' id='ch13')
-                                    label(for='ch13') Мыло
-                                .checkbox
-                    .filter__param.filter__param_opened
-                        .filter__title
-                            span Объем (мл)
-                        .filter__values(style='display: block')
-                            .filter__range
-                                span От
-                                input.input(type='text' value='2')
-                                span до
-                                input.input.input_big(type='text' value='200')
-                                span мл.
+            .catalog__filter.filter.js-filter
+                .filter__overlay
+                    .filter__wrap
+                        .filter__close.js-filter-close
+                        .filter__heading
+                            span Фильтры
+                        ul.filter__params
+                            .filter__param.filter__param_opened
+                                .filter__title
+                                    span Бренд
+                                .filter__values(style='display: block')
+                                    .filter__checkboxes
+                                        .checkbox
+                                            input(type='checkbox' id='ch1')
+                                            label(for='ch1') Chirton
+                                        .checkbox
+                                            input(type='checkbox' id='ch2')
+                                            label(for='ch2') Rio Royal
+                                        .checkbox
+                                            input(type='checkbox' id='ch3')
+                                            label(for='ch3') Liaаra
+                                        .checkbox
+                                            input(type='checkbox' id='ch4')
+                                            label(for='ch4') Tik Tak
+                                        .checkbox
+                                            input(type='checkbox' id='ch5')
+                                            label(for='ch5') Dr.Clean
+                                        .checkbox
+                                            input(type='checkbox' id='ch6')
+                                            label(for='ch6') Jiva
+                                        .checkbox
+                                            input(type='checkbox' id='ch7')
+                                            label(for='ch7') Mr.Volt
+                            .filter__param
+                                .filter__title
+                                    span Назначение
+                                .filter__values
+                                    .filter__checkboxes
+                                        .checkbox
+                                            input(type='checkbox' id='ch8')
+                                            label(for='ch8') Кухня
+                                        .checkbox
+                                            input(type='checkbox' id='ch9')
+                                            label(for='ch9') Санузел
+                                        .checkbox
+                                            input(type='checkbox' id='ch10')
+                                            label(for='ch10') Гараж
+                                        .checkbox
+                            .filter__param
+                                .filter__title
+                                    span Тип продукта
+                                .filter__values
+                                    .filter__checkboxes
+                                        .checkbox
+                                            input(type='checkbox' id='ch11')
+                                            label(for='ch11') Ароматизатор
+                                        .checkbox
+                                            input(type='checkbox' id='ch12')
+                                            label(for='ch12') Средство для мытья
+                                        .checkbox
+                                            input(type='checkbox' id='ch13')
+                                            label(for='ch13') Мыло
+                                        .checkbox
+                            .filter__param.filter__param_opened
+                                .filter__title
+                                    span Объем (мл)
+                                .filter__values(style='display: block')
+                                    .filter__range
+                                        span От
+                                        input.input(type='text' value='2')
+                                        span до
+                                        input.input.input_big(type='text' value='200')
+                                        span мл.
 
 
 
-                .filter__btns
-                    button.btn.btn_blue Показать
-                    button.btn Сбросить
+                        .filter__btns
+                            button.btn.btn_blue Показать
+                            button.btn Сбросить
 
             .catalog__content
                 .catalog__top
-                    a(href='#').catalog__filter-mobile
-
-                    .catalog__subheading
-                        span незаменимые помощники в вашем доме!
+                    a(href='#').catalog__filter-mobile.js-filter-opener
                     .catalog__sort.sort
                         .sort__direction
                             input(type='checkbox' id='sort-direction')

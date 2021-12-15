@@ -43,7 +43,7 @@ header.header
                     a(href='mailto:test@test.ru') office@transatlantic.ru
                 .header__phone
                     a(href='tel:+78005553535') +7(495) 775-39-38
-            .header__mobmenu-toggler.burger
+            .header__mobmenu-toggler.burger.js-mobile-menu-opener
                 input(type='checkbox' id='mobmenu-toggler')
                 label(for='mobmenu-toggler')
     .header__bottom
@@ -54,6 +54,24 @@ header.header
                         a(href='/company.html') О компании
                     li.header-menu__item
                         a(href='#') Продукция
+                        .submenu
+                            ul.submenu__list
+                                li.submenu__item
+                                    a(href='#') Освежители воздуха
+                                li.submenu__item
+                                    a(href='#') Стирка и уход за бельем
+                                li.submenu__item
+                                    a(href='#') Уборка дома
+                                li.submenu__item
+                                    a(href='#') Средства для прочистки труб
+                                li.submenu__item
+                                    a(href='#') Инсектицидные средства
+                                li.submenu__item
+                                    a(href='#') Зубные щетки
+                                li.submenu__item
+                                    a(href='#') Станки для бритья
+                                li.submenu__item
+                                    a(href='#') Средства для бритья
                     li.header-menu__item
                         a(href='#') Бренды
                     li.header-menu__item
@@ -70,7 +88,55 @@ header.header
                     li.lang-switcher__item
                         input(id='lang-btm-en' name='lang' type='radio' value='en')
                         label(for='lang-btm-en') En
-
+    .mobmenu.js-mobile-menu
+        ul.mobmenu__list
+            li.mobmenu__item.mobmenu__item_wide
+                a(href='#') Наша продукция
+                .mobmenu__submenu.submenu
+                    ul.submenu__list
+                        li.submenu__item
+                            a(href='#') Освежители воздуха
+                        li.submenu__item
+                            a(href='#') Стирка и уход за бельем
+                        li.submenu__item
+                            a(href='#') Уборка дома
+                        li.submenu__item
+                            a(href='#') Средства для прочистки труб
+                        li.submenu__item
+                            a(href='#') Инсектицидные средства
+                        li.submenu__item
+                            a(href='#') Зубные щетки
+                        li.submenu__item
+                            a(href='#') Станки для бритья
+                        li.submenu__item
+                            a(href='#') Средства для бритья
+            li.mobmenu__item
+                a(href='#') О компании
+            li.mobmenu__item
+                a(href='#') Бренды
+            li.mobmenu__item
+                a(href='#') Где купить
+            li.mobmenu__item
+                a(href='#') Что нового
+            li.mobmenu__item.mobmenu__item_contacts
+                a(href='#') Контакты
+                .contacts
+                    .contacts__phone
+                        a(href='tel:+78005553535') +7(495) 775-39-38
+                    .contacts__email
+                        a(href='mailto:test@test.ru') office@transatlantic.ru
+                    .contacts__address
+                        a(href='#') Россия, Москва, 119136, улица Улофа Пальме 1
+                    .contacts__feedback-btn.js-feedback-opener
+                        a(href='#').btn.btn_white Обратная связь
+                    .socials
+                        ul.socials__list
+                            li.socials__item.socials__item_whatsapp
+                                a(href='#')
+                            li.socials__item.socials__item_instagram
+                                a(href='#')
+                            li.socials__item.socials__item_youtube
+                                a(href='#')
 
 
 

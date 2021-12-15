@@ -43,6 +43,9 @@
         margin-bottom: 6px
         margin-top: 30px
 
+        font-size: 18px
+        line-height: 24px
+
   &__specs
     margin-top: 16px
     margin-bottom: 40px
@@ -72,6 +75,10 @@
 
   .range
 
+    @media $desktop
+      font-size: 14px
+      line-height: 17px
+
     &__line
       display: flex
       justify-content: space-between
@@ -81,7 +88,7 @@
       @media $tablet
         margin: 0
 
-        padding: 12px 10px
+        padding: 8px
 
       &_heading
         font-weight: bold
@@ -97,6 +104,8 @@
 
     &__item
       width: calc((100% - 24px) / 2)
+
+
 
 
   &__gallery
